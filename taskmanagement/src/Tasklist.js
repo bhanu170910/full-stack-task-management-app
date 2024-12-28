@@ -23,7 +23,7 @@ const TaskList = ({ reload, task }) => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`https://full-stack-task-management-app-4q2h.onrender.com/taskshttp://localhost:5000/tasks/${id}`);
+      await axios.delete(`https://full-stack-task-management-app-4q2h.onrender.com/tasks/${id}`);
       setTasks(tasks.filter((task) => task._id !== id)); // Remove task from state
     } catch (error) {
       console.error("Error deleting task:", error);

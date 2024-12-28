@@ -14,7 +14,7 @@ const Addtaskform = ({ onTaskAdded }) => {
       return;
     }
     try {
-      const response = await axios.post('https://full-stack-task-management-app-4q2h.onrender.com/tasks/tasks', newTask);
+      const response = await axios.post('https://full-stack-task-management-app-4q2h.onrender.com/tasks', newTask);
       onTaskAdded(newTask);
       setTitle('');
       setDescription('')
