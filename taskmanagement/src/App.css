@@ -1,0 +1,317 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.main-heading {
+  width: 100%;
+  margin-top: 30px;
+  font-weight: 900;
+  margin-right: 210px;
+  text-align: center;
+}
+
+.search-container {
+  margin-top: 20px;
+  text-align: center;
+
+}
+
+.search-container input {
+  border: solid 1px orange;
+  padding: 5px;
+  width: 500px;
+  margin-right: 15px;
+  margin-left: auto;
+  border-radius: 5px;
+  outline: none;
+
+
+}
+
+.search-container button {
+  border: solid 0px;
+  color: white;
+  font-size: 17px;
+
+}
+
+.btn-1 {
+  width: 100px;
+  height: 40px;
+  background-color: orange;
+  margin-left: 10px;
+  padding: 5px;
+  border-radius: 5px;
+
+}
+
+.btn-2 {
+  background-color: orange;
+  margin-left: 25px;
+  width: 200px;
+  height: 43px;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+/* Task List Container */
+.task-list {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Task Cards Container */
+.task-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Individual Task Card */
+.task-card {
+  display: flex;
+  align-items: center;
+  min-height: 350px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+.task-card:hover {
+  transform: scale(1.05);
+}
+
+/* Task Card Content */
+.task-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task-card h3 {
+  margin: 0;
+  font-weight: 900;
+  font-size: 1.5em;
+}
+
+.task-card p {
+  color: #555;
+}
+
+.status {
+  padding: 5px 10px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.status.completed {
+  font-weight: 600;
+  color: #28a745;
+}
+
+.status.pending {
+  font-weight: 600;
+
+  color: red;
+}
+
+/* Buttons */
+button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.edit-btn {
+  color: white;
+
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.delete-btn {
+  color: white;
+  background-color: rgba(221, 32, 32, 0.803)
+}
+
+
+.status-head {
+  font-weight: 700;
+}
+
+/* Edit Form Styles */
+.edit-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.edit-form h3 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+
+.edit-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.edit-form input,
+.edit-form textarea,
+.edit-form select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 1em;
+}
+
+.button-holder {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.button-holder button {
+  width: 100px;
+  background-color: orange;
+}
+
+
+
+
+.add-task-form {
+  background-color: #fff;
+  border-radius: 8px;
+  border: solid 5px #ffa50038;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.add-task-form input,
+.add-task-form textarea,
+.add-task-form select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  background-color: #f8f9fa;
+
+}
+
+.add-task-form:hover {
+  transform: translateY(-5px);
+}
+
+.add-task-form input:focus,
+.add-task-form textarea:focus,
+.add-task-form section {
+  border-color: #5c9bf3;
+  outline: none;
+  box-shadow: 0 0 5px rgba(92, 155, 243, 0.5);
+}
+
+.add-task-form input {
+  font-size: 18px;
+}
+
+.add-task-form textarea {
+  min-height: 120px;
+  font-size: 16px;
+}
+
+.add-task-form select {
+  font-size: 16px;
+}
+
+
+.add-task-form button {
+  background-color: orange;
+  color: white;
+}
+
+
+.add-task-form .error {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.add-task-form h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .search-container input {
+    width: 286px;
+  }
+
+  .add-task-form {
+    margin: 10px auto;
+  }
+
+  .btn-2 {
+    width: 100px;
+  }
+
+}
+
+@media (max-width: 425px) {
+  .search-container input {
+    width: 190px;
+    margin: 10px;
+  }
+
+  .search-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn-1,
+  .btn-2 {
+    width: 59px;
+    height: 40px;
+    margin: 10px;
+  }
+
+}
+
+@media (max-width: 320px) {
+  .search-container input {
+    width: 140px;
+    margin: 10px;
+  }
+}
