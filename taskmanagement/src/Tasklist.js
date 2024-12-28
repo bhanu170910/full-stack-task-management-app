@@ -11,7 +11,7 @@ const TaskList = ({ reload, task }) => {
   useEffect(() => {
     const fetchTasks = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/tasks");
+        const response = await axios.get("https://full-stack-task-management-app-4q2h.onrender.com/tasks");
         setTasks(response.data);
       } catch (error) {
         console.error("Error fetching tasks:", error);
@@ -39,7 +39,7 @@ const TaskList = ({ reload, task }) => {
     setEditingTask(null);
     const fetchTasks = async () => {
       try {
-        const response = await axios.get("/tasks");
+        const response = await axios.get("https://full-stack-task-management-app-4q2h.onrender.com/tasks/tasks");
         setTasks(response.data);
       } catch (error) {
         console.error("Error fetching tasks:", error);

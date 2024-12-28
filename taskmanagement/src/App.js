@@ -16,7 +16,7 @@ function App() {
 
   const fetchTasks = async () => {
     try {
-      const response = await axios.get("https://full-stack-task-management-app-4q2h.onrender.com/tasks/tasks");
+      const response = await axios.get("https://full-stack-task-management-app-4q2h.onrender.com/tasks");
       setTasks(response.data);
       setFilteredTasks(response.data);
     } catch (error) {
