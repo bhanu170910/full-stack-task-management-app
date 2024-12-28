@@ -10,7 +10,7 @@ const EditForm = ({ task, onUpdate, onClose }) => {
     e.preventDefault();
     const updatedTask = { title, description, status };
     try {
-      await axios.put(`http://localhost:5000/tasks/${task._id}`, updatedTask);
+      await axios.put(`/tasks/${task._id}`, updatedTask);
       onUpdate(); // Callback to update the task list after editing
       onClose(); // Close the form after updating
     } catch (error) {

@@ -14,7 +14,7 @@ const Addtaskform = ({ onTaskAdded }) => {
       return;
     }
     try {
-      const response = await axios.post('http://localhost:5000/tasks', newTask);
+      const response = await axios.post('/tasks', newTask);
       onTaskAdded(newTask);
       setTitle('');
       setDescription('')

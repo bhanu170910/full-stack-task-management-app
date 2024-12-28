@@ -16,7 +16,7 @@ function App() {
 
   const fetchTasks = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/tasks");
+      const response = await axios.get("/tasks");
       setTasks(response.data);
       setFilteredTasks(response.data);
     } catch (error) {
